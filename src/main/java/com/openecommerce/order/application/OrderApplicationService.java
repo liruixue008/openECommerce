@@ -9,7 +9,7 @@ import com.openecommerce.order.domain.Order;
 import com.openecommerce.order.domain.OrderRepository;
 import com.openecommerce.product.domain.Product;
 import com.openecommerce.product.domain.ProductRepository;
-import com.openecommerce.shared.domain.valueobject.Money;
+import com.openecommerce.shared.domain.Money;
 import com.openecommerce.user.domain.User;
 import com.openecommerce.user.domain.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

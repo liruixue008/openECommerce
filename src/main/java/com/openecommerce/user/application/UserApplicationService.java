@@ -1,6 +1,6 @@
 package com.openecommerce.user.application;
 
-import com.openecommerce.shared.domain.valueobject.Money;
+import com.openecommerce.shared.domain.Money;
 import com.openecommerce.user.application.dto.CreateUserRequest;
 import com.openecommerce.user.application.dto.UserRechargeRequest;
 import com.openecommerce.user.application.dto.UserResponse;

@@ -5,7 +5,7 @@ import com.openecommerce.merchant.domain.MerchantRepository;
 import com.openecommerce.order.domain.Order;
 import com.openecommerce.order.domain.OrderRepository;
 import com.openecommerce.order.domain.OrderStatus;
-import com.openecommerce.shared.domain.valueobject.Money;
+import com.openecommerce.shared.domain.Money;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

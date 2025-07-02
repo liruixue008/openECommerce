@@ -7,7 +7,7 @@ import com.openecommerce.product.application.dto.ProductResponse;
 import com.openecommerce.product.domain.Product;
 import com.openecommerce.product.domain.ProductRepository;
 import com.openecommerce.product.domain.ProductStatus;
-import com.openecommerce.shared.domain.valueobject.Money;
+import com.openecommerce.shared.domain.Money;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
