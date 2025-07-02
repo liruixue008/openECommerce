@@ -1,7 +1,7 @@
          
 ## 电商平台系统开发完成
 
-创建一个基于领域驱动设计（DDD）架构的完整电商平台系统，包含以下核心功能：
+一个基于领域驱动设计（DDD）架构的完整电商平台系统，包含以下核心功能：
 
 ### 已创建的模块和功能
 
@@ -35,7 +35,7 @@
 - 支持定时结算任务和销售额统计
 
 **6. 共享模块**
-- <mcfile name="Money.java" path="d:\git-coding\openECommerce\src\main\java\com\openecommerce\shared\domain\Money.java"></mcfile> - 金钱值对象
+- <mcfile name="Money.java" path="d:\git-coding\openECommerce\src\main\java\com\openecommerce\shared\domain\Money.java"></mcfile> - 货币值对象
 - <mcfile name="AggregateRoot.java" path="d:\git-coding\openECommerce\src\main\java\com\openecommerce\shared\domain\AggregateRoot.java"></mcfile> - 聚合根基类
 
 ### 技术特性
