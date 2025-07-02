@@ -153,7 +153,7 @@
 ## 5. 完整业务流程示例
 
 ### 5.1 完整的电商购买流程
-以windows本地运行创建数据为例，在本项目根目录下运行以下脚本
+以windows本地运行创建数据为例，在本项目根目录下运行以下脚本，mock的数据来源存放于本项目的test-request-json文件夹下。
 #### 步骤1: 创建用户
 ```bash
 Invoke-WebRequest -Uri 'http://localhost:8080/api/users' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/create-user-request.json'
