@@ -1,4 +1,4 @@
-         
+
 ## 电商平台系统开发完成
 
 一个基于领域驱动设计（DDD）架构的完整电商平台系统，包含以下核心功能：
@@ -57,4 +57,9 @@
 - API接口可通过各模块的REST控制器访问
 
 系统现在已经完全可用，可以通过REST API进行用户注册、商家管理、商品管理、订单处理等完整的电商业务流程。
-        
+
+具体的接口调用过程，请参考本目录下的[API-Request.md][1]文件说明。
+
+
+
+[1]: https://github.com/liruixue008/openECommerce/blob/main/API-Request.md

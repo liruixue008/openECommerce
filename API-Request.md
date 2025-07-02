@@ -157,7 +157,7 @@
 #### 步骤1: 创建用户
 ```bash
 Invoke-WebRequest -Uri 'http://localhost:8080/api/users' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/create-user-request.json'
-
+```
 #### 步骤2: 创建商家
 ```bash
 Invoke-WebRequest -Uri 'http://localhost:8080/api/merchants' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/create-merchant-request.json'
@@ -177,6 +177,9 @@ Invoke-WebRequest -Uri 'http://localhost:8080/api/users/1/recharge' -Method POST
 ```bash
 Invoke-WebRequest -Uri 'http://localhost:8080/api/orders' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/order-create-request.json'
 ```
+
+通过以上步骤，可以看到：
+当用户下单购买某个的商品，提供商品的sku和数量，相应的用户预存账户里面减掉对应的现金(quantity * price)，商家账户里加上对应的现金，并且库存中减掉对应的商品数量。
 
 ---
 
