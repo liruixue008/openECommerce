@@ -153,68 +153,29 @@
 ## 5. 完整业务流程示例
 
 ### 5.1 完整的电商购买流程
-
+以windows本地运行创建数据为例，在本项目根目录下运行以下脚本
 #### 步骤1: 创建用户
 ```bash
-curl -X POST http://localhost:8080/api/users \
-  -H "Content-Type: application/json" \
-  -d '{
-    "username": "buyer001",
-    "email": "buyer001@example.com",
-    "currency": "CNY"
-  }'
-```
+Invoke-WebRequest -Uri 'http://localhost:8080/api/users' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/create-user-request.json'
 
 #### 步骤2: 创建商家
 ```bash
-curl -X POST http://localhost:8080/api/merchants \
-  -H "Content-Type: application/json" \
-  -d '{
-    "name": "科技数码专营店",
-    "email": "tech@store.com",
-    "phone": "13900139000",
-    "currency": "CNY"
-  }'
+Invoke-WebRequest -Uri 'http://localhost:8080/api/merchants' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/create-merchant-request.json'
 ```
 
 #### 步骤3: 创建商品
 ```bash
-curl -X POST http://localhost:8080/api/products \
-  -H "Content-Type: application/json" \
-  -d '{
-    "sku": "LAPTOP-MACBOOK-PRO-16",
-    "name": "MacBook Pro 16英寸",
-    "description": "苹果MacBook Pro 16英寸，M3 Pro芯片，512GB SSD",
-    "price": 18999.00,
-    "currency": "CNY",
-    "stockQuantity": 20,
-    "merchantId": 1
-  }'
+Invoke-WebRequest -Uri 'http://localhost:8080/api/products' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/create-product-request.json'
 ```
 
 #### 步骤4: 用户充值
 ```bash
-curl -X POST http://localhost:8080/api/users/1/recharge \
-  -H "Content-Type: application/json" \
-  -d '{
-    "amount": 25000.00,
-    "currency": "CNY"
-  }'
+Invoke-WebRequest -Uri 'http://localhost:8080/api/users/1/recharge' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/user-recharge-request.json'
 ```
 
 #### 步骤5: 创建订单
 ```bash
-curl -X POST http://localhost:8080/api/orders \
-  -H "Content-Type: application/json" \
-  -d '{
-    "userId": 1,
-    "items": [
-      {
-        "sku": "LAPTOP-MACBOOK-PRO-16",
-        "quantity": 1
-      }
-    ]
-  }'
+Invoke-WebRequest -Uri 'http://localhost:8080/api/orders' -Method POST -Headers @{'Content-Type'='application/json'} -InFile 'test-request-json/order-create-request.json'
 ```
 
 ---

@@ -1,0 +1,9 @@
+{
+    "sku": "LAPTOP-MACBOOK-PRO-16",
+    "name": "MacBook Pro 16英寸",
+    "description": "苹果MacBook Pro 16英寸，M3 Pro芯片，512GB SSD",
+    "price": 18999.00,
+    "currency": "CNY",
+    "stockQuantity": 20,
+    "merchantId": 1
+}

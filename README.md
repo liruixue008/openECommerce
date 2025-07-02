@@ -48,8 +48,9 @@
 - **定时任务**: 支持结算服务的定时执行
 
 ### 应用状态
+本地运行，请从com.openecommerce.OpenECommerceApplication类启动
 
-✅ **应用已成功启动**，运行在 http://localhost:8080/api
+✅ **应用已成功启动后**，运行在 http://localhost:8080/api
 
 - 健康检查: http://localhost:8080/api/actuator/health
 - H2数据库控制台: http://localhost:8080/api/h2-console

@@ -1,9 +1,12 @@
 package com.openecommerce.user.interfaces.rest;
 
+import com.openecommerce.settlement.application.SettlementService;
 import com.openecommerce.user.application.UserApplicationService;
 import com.openecommerce.user.application.dto.CreateUserRequest;
 import com.openecommerce.user.application.dto.UserRechargeRequest;
 import com.openecommerce.user.application.dto.UserResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +24,8 @@ import java.util.Optional;
 @RequestMapping("/users")
 @Validated
 public class UserController {
+
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     
     private final UserApplicationService userApplicationService;
     
@@ -34,6 +39,7 @@ public class UserController {
      */
     @PostMapping
     public ResponseEntity<UserResponse> createUser(@Valid @RequestBody CreateUserRequest request) {
+        logger.info("the request={}",request);
         try {
             UserResponse response = userApplicationService.createUser(request);
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
