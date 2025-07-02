@@ -50,10 +50,10 @@
 ### 应用状态
 本地运行，请从com.openecommerce.OpenECommerceApplication类启动
 
-✅ **应用已成功启动后**，运行在 http://localhost:8080/api
+✅ **应用已成功启动后**，各接口运行在 http://localhost:8080/api， 请参见本目录下的[API-Request.md][1]文件说明
 
 - 健康检查: http://localhost:8080/api/actuator/health
-- H2数据库控制台: http://localhost:8080/api/h2-console
+- H2数据库（jdbc-url项，要填入jdbc:h2:mem:ecommerce）控制台: http://localhost:8080/api/h2-console
 - API接口可通过各模块的REST控制器访问
 
 系统现在已经完全可用，可以通过REST API进行用户注册、商家管理、商品管理、订单处理等完整的电商业务流程。
